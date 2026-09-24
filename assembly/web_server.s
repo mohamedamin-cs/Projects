@@ -17,7 +17,7 @@ mov rbx, rax
 sub rsp, 16
 mov qword ptr [rsp + 8], 0
 mov dword ptr [rsp + 4], 0
-mov word ptr [rsp + 2], 0x5000
+mov word ptr [rsp + 2], 0x0050
 mov word ptr [rsp], 2
 
 mov rdi, rbx
