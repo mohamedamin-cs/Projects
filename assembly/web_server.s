@@ -158,4 +158,3 @@ jmp loop
 path:
 .asciz "HTTP/1.0 200 OK\r\n\r\n"
 
-i built this web server, sqhould i post it on linkedin???
