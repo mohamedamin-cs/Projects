@@ -12,12 +12,18 @@ using raw Linux syscalls — no libc, no dependencies.
 ## Build
 
 ```bash
-as --64 web_server.as -o web_server.o
-ld web_server.o -o web_server
+```
+```bash
+chmod +x runas.sh
+./runas.sh web_server
+```
+
 
 OR
 
-./runas.sh web_server
+```bash
+as --64 web_server.as -o web_server.o
+ld web_server.o -o web_server
 ```
 
 ## Run
@@ -44,4 +50,3 @@ socket, bind, listen, accept, fork, read, write, open, close, exit
 - GET truncates files larger than 256 bytes
 - No error handling on open() failures
 - POST doesn't truncate existing files before writing
-
